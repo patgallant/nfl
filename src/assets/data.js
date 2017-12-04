@@ -134,9 +134,9 @@ const Teams = [
     {
         home: "Houston",
         name: "Texans",
-        abbreviation: "HOU",
         conference: "AFC",
         division: "South",
+        abbreviation: "HOU",
         wins: 4,
         losses: 7,
         ties: 0,
