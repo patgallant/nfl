@@ -37,9 +37,9 @@ class TeamList extends Component {
                             <tr>
                                 <td align="left" valign="top">{team.home}{" "}{team.name}</td>
                                 <td align="left" valign="top">{team.conference}{" "}{team.division}</td>
-                                <td align="center" valign="top">{team.wins}</td>
-                                <td align="center" valign="top">{team.losses}</td>
-                                <td align="center" valign="top">{team.ties}</td>
+                                <td align="center" valign="top">{team.wins.length}</td>
+                                <td align="center" valign="top">{team.losses.length}</td>
+                                <td align="center" valign="top">{team.ties.length}</td>
                             </tr>
                         );
                     })}
