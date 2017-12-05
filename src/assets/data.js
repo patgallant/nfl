@@ -5,10 +5,9 @@ const Teams = [
         abbreviation: "ARI",
         conference: "NFC",
         division: "West",
-        wins: 5,
-        losses: 6,
-        ties: 0,
-        defeated: [ "IND", "SFO", "TBB", "JAX" ]
+        wins: [ "IND", "SFO", "TBB", "SFO", "JAX" ],
+        losses: [ "DET", "DAL", "PHI", "LAR", "SEA", "HOU", "LAR" ],
+        ties: []
     },
     {
         home: "Atlanta",
@@ -16,10 +15,9 @@ const Teams = [
         abbreviation: "ATL",
         conference: "NFC",
         division: "South",
-        wins: 7,
-        losses: 4,
-        ties: 0,
-        defeated: [ "CHI", "GBP", "DET", "NYJ", "DAL", "SEA", "TBB" ]
+        wins: [ "CHI", "GBP", "DET", "NYJ", "DAL", "SEA", "TBB" ],
+        losses: [ "BUF", "MIA", "NEP", "CAR", "MIN" ],
+        ties: []
     },
     {
         home: "Baltimore",
@@ -27,10 +25,9 @@ const Teams = [
         abbreviation: "BAL",
         conference: "AFC",
         division: "North",
-        wins: 6,
-        losses: 5,
-        ties: 0,
-        defeated: [ "CIN", "CLE", "OAK", "MIA", "GBP", "HOU" ]
+        wins: [ "CIN", "CLE", "OAK", "MIA" ],
+        losses: [ "JAX", "PIT", "CHI", "MIN", "TEN", "GBP", "HOU", "DET" ],
+        ties: []
     },
     {
         home: "Buffalo",
@@ -38,10 +35,9 @@ const Teams = [
         abbreviation: "BUF",
         conference: "AFC",
         division: "East",
-        wins: 6,
-        losses: 5,
-        ties: 0,
-        defeated: [ "NYJ", "DEN", "ATL", "TBB", "OAK", "KCC" ]
+        wins: [ "NYJ", "DEN", "ATL", "TBB", "OAK", "KCC" ],
+        losses: [ "CAR", "CIN", "NYJ", "NOS", "LAC", "NEP" ],
+        ties: []
     },
     {
         home: "Carolina",
@@ -49,10 +45,9 @@ const Teams = [
         abbreviation: "CAR",
         conference: "NFC",
         division: "South",
-        wins: 8,
-        losses: 3,
-        ties: 0,
-        defeated: [ "SFO", "BUF", "NEP", "DET", "TBB", "ATL", "MIA", "NYJ" ]
+        wins: [ "SFO", "BUF", "NEP", "DET", "TBB", "ATL", "MIA", "NYJ" ],
+        losses: [ "NOS", "PHI", "CHI", "NOS" ],
+        ties: []
     },
     {
         home: "Chicago",
@@ -60,10 +55,9 @@ const Teams = [
         abbreviation: "CHI",
         conference: "NFC",
         division: "North",
-        wins: 3,
-        losses: 8,
-        ties: 0,
-        defeated: [ "PIT", "BAL", "CAR" ]
+        wins: [ "PIT", "BAL", "CAR" ],
+        losses: [ "ATL", "TBB", "GBP", "MIN", "NOS", "GBP", "DET", "PHI", "SFO" ],
+        ties: []
     },
     {
         home: "Cincinnati",
@@ -71,10 +65,9 @@ const Teams = [
         abbreviation: "CIN",
         conference: "AFC",
         division: "North",
-        wins: 5,
-        losses: 6,
-        ties: 0,
-        defeated: [ "CLE", "BUF", "IND", "DEN" ]
+        wins: [ "CLE", "BUF", "IND", "DEN", "CLE" ],
+        losses: [ "BAL", "HOU", "GBP", "PIT", "JAX", "TEN", "PIT" ],
+        ties: []
     },
     {
         home: "Cleveland",
@@ -82,10 +75,9 @@ const Teams = [
         abbreviation: "CLE",
         conference: "AFC",
         division: "North",
-        wins: 0,
-        losses: 11,
-        ties: 0,
-        defeated: []
+        wins: [],
+        losses: [ "PIT", "BAL", "IND", "CIN", "NYJ", "HOU", "TEN", "MIN", "DET", "JAX", "CIN", "LAC" ],
+        ties: []
     },
     {
         home: "Dallas",
@@ -93,10 +85,9 @@ const Teams = [
         abbreviation: "DAL",
         conference: "NFC",
         division: "East",
-        wins: 5,
-        losses: 6,
-        ties: 0,
-        defeated: [ "NYG", "ARI", "SFO", "WAS", "KCC" ]
+        wins: [ "NYG", "ARI", "SFO", "WAS", "KCC", "WAS" ],
+        losses: [ "DEN", "LAR", "GBP", "ATL", "PHI", "LAC" ],
+        ties: []
     },
     {
         home: "Denver",
@@ -104,10 +95,9 @@ const Teams = [
         abbreviation: "DEN",
         conference: "AFC",
         division: "West",
-        wins: 3,
-        losses: 8,
-        ties: 0,
-        defeated: [ "LAC", "DAL", "OAK" ]
+        wins: [ "LAC", "DEN", "OAK" ],
+        losses: [ "BUF", "NYG", "LAC", "KCC", "PHI", "NEP", "CIN", "OAK", "MIA" ],
+        ties: []
     },
     {
         home: "Detroit",
@@ -115,10 +105,9 @@ const Teams = [
         abbreviation: "DET",
         conference: "NFC",
         division: "North",
-        wins: 6,
-        losses: 5,
-        ties: 0,
-        defeated: [ "ARI", "NYG", "MIN", "GBP", "CLE", "CHI" ]
+        wins: [ "ARI", "NYG", "MIN", "GBP", "CLE", "CHI" ],
+        losses: [ "ATL", "CAR", "NOS", "PIT", "MIN", "BAL" ],
+        ties: []
     },
     {
         home: "Green Bay",
@@ -126,10 +115,9 @@ const Teams = [
         abbreviation: "GBP",
         conference: "NFC",
         division: "North",
-        wins: 5,
-        losses: 6,
-        ties: 0,
-        defeated: [ "SEA", "CIN", "CHI", "DAL" ]
+        wins: [ "SEA", "CIN", "CHI", "DAK", "CHI", "TBB" ],
+        losses: [ "ATL", "MIN", "NOS", "DET", "BAL", "PIT" ],
+        ties: []
     },
     {
         home: "Houston",
@@ -137,10 +125,9 @@ const Teams = [
         conference: "AFC",
         division: "South",
         abbreviation: "HOU",
-        wins: 4,
-        losses: 7,
-        ties: 0,
-        defeated: [ "CIN", "TEN", "CLE", "ARI" ]
+        wins: [ "CIN", "TEN", "CLE", "ARI" ],
+        losses: [ "JAX", "NEP", "KCC", "SEA", "IND", "LAR", "BAL", "TEN" ],
+        ties: []
     },
     {
         home: "Indianapolis",
@@ -148,10 +135,9 @@ const Teams = [
         abbreviation: "IND",
         conference: "AFC",
         division: "South",
-        wins: 3,
-        losses: 8,
-        ties: 0,
-        defeated: [ "CLE", "SFO", "HOU" ]
+        wins: [ "CLE", "SFO", "HOU" ],
+        losses: [ "LAR", "ARI", "SEA", "TEN", "JAX", "CIN", "PIT", "TEN", "JAX" ],
+        ties: []
     },
     {
         home: "Jacksonville",
@@ -159,10 +145,9 @@ const Teams = [
         abbreviation: "JAX",
         conference: "AFC",
         division: "South",
-        wins: 7,
-        losses: 4,
-        ties: 0,
-        defeated: [ "HOU", "BAL", "PIT", "IND", "CIN", "LAC", "CLE"]
+        wins: [ "HOU", "BAL", "PIT", "IND", "CIN", "LAC", "CLE", "IND" ],
+        losses: [ "TEN", "NYJ", "LAR", "ARI" ],
+        ties: []
     },
     {
         home: "Kansas City",
@@ -170,10 +155,9 @@ const Teams = [
         abbreviation: "KCC",
         conference: "AFC",
         division: "West",
-        wins: 6,
-        losses: 5,
-        ties: 0,
-        defeated: [ "NEP", "PHI", "LAC", "WAS", "HOU", "DEN" ]
+        wins: [ "NEP", "PHI", "LAC", "WAS", "HOU", "DEN" ],
+        losses: [ "PIT", "OAK", "DAL", "NYG", "BUF", "NYJ" ],
+        ties: []
     },
     {
         home: "Los Angeles",
@@ -181,10 +165,9 @@ const Teams = [
         abbreviation: "LAC",
         conference: "AFC",
         division: "West",
-        wins: 5,
-        losses: 6,
-        ties: 0,
-        defeated: [ "NYG", "OAK", "DEN", "BUF", "DAL" ]
+        wins: [ "NYG", "OAK", "DEN", "BUF", "DAL", "CLE" ],
+        losses: [ "DEN", "MIA", "KAN", "PHI", "NEP", "JAX" ],
+        ties: []
     },
     {
         home: "Los Angeles",
@@ -192,10 +175,9 @@ const Teams = [
         abbreviation: "LAR",
         conference: "NFC",
         division: "West",
-        wins: 8,
-        losses: 3,
-        ties: 0,
-        defeated: [ "IND", "SFO", "DAL", "JAX", "ARI", "NYG", "HOU", "NOS" ]
+        wins: [ "IND", "SFO", "DAL", "JAX", "ARI", "NYG", "HOU", "NOS", "ARI" ],
+        losses: [ "WAS", "SEA", "MIN" ],
+        ties: []
     },
     {
         home: "Miami",
@@ -203,10 +185,9 @@ const Teams = [
         abbreviation: "MIA",
         conference: "AFC",
         division: "East",
-        wins: 4,
-        losses: 7,
-        ties: 0,
-        defeated: [ "LAC", "TEN", "ATL", "NYJ" ]
+        wins: [ "LAC", "TEN", "ATL", "NYJ", "DEN" ],
+        losses: [ "NYJ", "NOS", "BAL", "OAK", "CAR", "TBB", "NEP" ],
+        ties: []
     },
     {
         home: "Minnesota",
@@ -214,10 +195,9 @@ const Teams = [
         abbreviation: "MIN",
         conference: "NFC",
         division: "North",
-        wins: 9,
-        losses: 2,
-        ties: 0,
-        defeated: [ "NOS", "TBB", "CHI", "GBP", "BAL", "CLE", "WAS", "LAR", "DET" ]
+        wins: [ "NOS", "TBB", "CHI", "GBP", "BAL", "CLE", "WAS", "LAR", "DET", "ATL" ],
+        losses: [ "PIT", "DET" ],
+        ties: []
     },
     { 
         home: "New England", 
@@ -225,10 +205,9 @@ const Teams = [
         abbreviation: "NEP", 
         conference: "AFC", 
         division: "East", 
-        wins: 9, 
-        losses: 2, 
-        ties: 0,
-        defeated: [ "NOS", "HOU", "TBB", "NYJ", "ATL", "LAC", "DEN", "OAK", "MIA" ]
+        wins: [ "NOS", "HOU", "TBB", "NYJ", "ATL", "LAC", "DEN", "OAK", "MIA", "BUF" ],
+        losses: [ "KCC", "CAR" ],
+        ties: []
     },
     {
         home: "New Orleans",
@@ -236,10 +215,9 @@ const Teams = [
         abbreviation: "NOS",
         conference: "NFC",
         division: "South",
-        wins: 8,
-        losses: 3,
-        ties: 0,
-        defeated: [ "CAR", "MIA", "DET", "GBP", "CHI", "TBB", "BUF", "WAS" ]
+        wins: [ "CAR", "MIA", "DET", "GBP", "CHI", "TBB", "BUF", "WAS", "CAR" ],
+        losses: [ "MIN", "NEP", "LAR" ],
+        ties: []
     },
     {
         home: "New York",
@@ -247,10 +225,9 @@ const Teams = [
         abbreviation: "NYG",
         conference: "NFC",
         division: "East",
-        wins: 2,
-        losses: 9,
-        ties: 0,
-        defeated: [ "DEN", "KCC" ]
+        wins: [ "DEN", "KCC" ],
+        losses: [ "NYG", "DET", "PHI", "TBB", "LAC", "SEA", "LAR", "SFO", "WAS", "OAK" ],
+        ties: []
     },
     {
         home: "New York",
@@ -258,10 +235,9 @@ const Teams = [
         abbreviation: "NYJ",
         conference: "AFC",
         division: "East",
-        wins: 4,
-        losses: 7,
-        ties: 0,
-        defeated: [ "MIA", "JAX", "CLE", "BUF" ]
+        wins: [ "MIA", "JAX", "CLE", "BUF", "KCC" ],
+        losses: [ "BUF", "OAK", "NEP", "MIA", "ATL", "TBB", "CAR" ],
+        ties: []
     },
     {
         home: "Oakland",
@@ -269,10 +245,9 @@ const Teams = [
         abbreviation: "OAK",
         conference: "AFC",
         division: "West",
-        wins: 5,
-        losses: 6,
-        ties: 0,
-        defeated: [ "TEN", "NYJ", "KCC", "MIA", "DEN" ]
+        wins: [ "TEN", "NYJ", "KCC", "MIA", "OAK", "NYG" ],
+        losses: [ "WAS", "DEN", "BAL", "LAC", "BUF", "NEP" ],
+        ties: []
     },
     {
         home: "Philadelphia",
@@ -280,10 +255,9 @@ const Teams = [
         abbreviation: "PHI",
         conference: "NFC",
         division: "East",
-        wins: 10,
-        losses: 1,
-        ties: 0,
-        defeated: [ "WAS", "NYG", "LAC", "ARI", "CAR", "SFO", "DEN", "DAL", "CHI" ]
+        wins: [ "WAS", "NYG", "LAC", "ARI", "CAR", "WAS", "SFO", "DEN", "DAL", "CHI" ],
+        losses: [ "KCC", "SEA" ],
+        ties: []
     },
     {
         home: "Pittsburgh",
@@ -291,10 +265,9 @@ const Teams = [
         abbreviation: "PIT",
         conference: "AFC",
         division: "North",
-        wins: 9,
-        losses: 2,
-        ties: 0,
-        defeated: [ "CLE", "MIN", "BAL", "KCC", "CIN", "DET", "IND", "TEN", "GBP" ]
+        wins: [ "CLE", "MIN", "BAL", "KCC", "CIN", "DET", "IND", "TEN", "GBP", "CIN" ],
+        losses: [ "CHI", "JAX" ],
+        ties: []
     },
     {
         home: "San Francisco",
@@ -302,10 +275,9 @@ const Teams = [
         abbreviation: "SFO",
         conference: "NFC",
         division: "West",
-        wins: 1,
-        losses: 10,
-        ties: 0,
-        defeated: [ "NYG" ]
+        wins: [ "NYG", "CHI" ],
+        losses: [ "CAR", "SEA", "LAR", "ARI", "IND", "WAS", "DAL", "PHI", "ARI", "SEA" ],
+        ties: []
     },
     {
         home: "Seattle",
@@ -313,10 +285,9 @@ const Teams = [
         abbreviation: "SEA",
         conference: "NFC",
         division: "West",
-        wins: 7,
-        losses: 4,
-        ties: 0,
-        defeated: [ "SFO", "IND", "LAR", "NYG", "HOU", "ARI" ]
+        wins: [ "SFO", "IND", "LAR", "NYG", "HOU", "ARI", "SFO", "PHI" ],
+        losses: [ "GBP", "TEN", "WAS", "ATL" ],
+        ties: []
     },
     {
         home: "Tampa Bay",
@@ -324,10 +295,9 @@ const Teams = [
         abbreviation: "TBB",
         conference: "NFC",
         division: "South",
-        wins: 4,
-        losses: 7,
-        ties: 0,
-        defeated: [ "CHI", "NYG", "NYJ", "MIA" ]
+        wins: [ "CHI", "NYG", "NYJ", "MIA" ],
+        losses: [ "MIN", "NEP", "ARI", "BUF", "CAR", "NOS", "ATL", "GBP" ],
+        ties: []
     },
     {
         home: "Tennessee",
@@ -335,10 +305,9 @@ const Teams = [
         abbreviation: "TEN",
         conference: "AFC",
         division: "South",
-        wins: 7,
-        losses: 4,
-        ties: 0,
-        defeated: [ "JAX", "SEA", "IND", "CLE", "BAL", "CIN"]
+        wins: [ "JAX", "SEA", "IND", "CLE", "BAL", "CIN", "IND", "HOU" ],
+        losses: [ "OAK", "HOU", "MIA", "PIT" ],
+        ties: []
     },
     {
         home: "Washington",
@@ -346,10 +315,9 @@ const Teams = [
         abbreviation: "WAS",
         conference: "NFC",
         division: "East",
-        wins: 5,
-        losses: 6,
-        ties: 0,
-        defeated: [ "LAR", "OAK", "SFO", "SEA", "NYG" ]
+        wins: [ "LAR", "OAK", "SFO", "SEA", "NYG" ],
+        losses: [ "PHI", "KCC", "PHI", "DAL", "MIN", "NOS", "DAL" ],
+        ties: []
     }
 ];
 
