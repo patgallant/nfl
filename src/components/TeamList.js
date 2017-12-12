@@ -21,7 +21,8 @@ class TeamList extends Component {
                             );
                         })}
                     </select>
-                    <table border="0" cellpadding="2" cellSpacing="0">
+                    <table border="0" cellPadding="2" cellSpacing="0">
+                        <tbody>
                         <tr>
                             <th align="left" valign="top">Team</th>
                             <th align="left" valign="top">Conference and Division</th>
@@ -43,6 +44,7 @@ class TeamList extends Component {
                             </tr>
                         );
                     })}
+                    </tbody>
                     </table>
                 </form>
             </div>

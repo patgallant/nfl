@@ -21,26 +21,39 @@ class App extends Component {
     })
   };
 
-  rankTeams = () => {
+  oldRankTeams = () => {
     let rankedTeams = this.props.teams.slice();
 
     return this.rankByRecord(rankedTeams);
   };
 
+  getRecord = (team) => {
+    if (team.wins.length + team.losses.length + team.ties.length === 0) {
+      return 0;
+    }
+
+    return team.wins.length / (team.wins.length + team.losses.length + team.ties.length);
+  };
+
   rankByRecord = (teams) => {
     return teams.sort((a, b) => {
-      let recordA = a.wins.length / (a.wins.length + a.losses.length + a.ties.length);
-      let recordB = b.wins.length / (b.wins.length + b.losses.length + b.ties.length);
-
-      return recordB - recordA;
+      let recordComparison = this.getRecord(b) - this.getRecord(a);
+      return recordComparison;
     });
+  };
+
+  areInSameDivision = (teamOne, teamTwo) => {
+    return (teamOne.conference === teamTwo.conference) && (teamOne.division === teamTwo.division);
+  };
+
+  rankTeams2 = () => {
   };
 
   render() {
     return (
       <div className="App">
         <TeamList 
-          teams={this.rankTeams()} 
+          teams={rankTeams(this.props.teams)} 
           selectedConference={this.state.selectedConference}
           selectConference={this.selectConference} />
       </div>
