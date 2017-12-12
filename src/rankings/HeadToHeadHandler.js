@@ -47,14 +47,6 @@ class HeadToHeadHandler extends RankHandler {
 
         return false;
     }
-
-    beatTeam(teamOne, teamTwo) {
-        return (teamOne.wins.indexOf(teamTwo.abbreviation) >= 0);
-    }
-
-    sweptTeam(teamOne, teamTwo) {
-        return (this.beatTeam(teamOne, teamTwo) && !this.beatTeam(teamTwo, teamOne));
-    }
 }
 
 export default HeadToHeadHandler;

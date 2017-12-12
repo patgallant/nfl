@@ -34,6 +34,32 @@ class RankHandler {
      * @param {RankRequest} request 
      */
     handleRequest(request) {}
+
+    beatTeam(teamOne, teamTwo) {
+        return (teamOne.wins.indexOf(teamTwo.abbreviation) >= 0);
+    }
+
+    sweptTeam(teamOne, teamTwo) {
+        return (this.beatTeam(teamOne, teamTwo) && !this.beatTeam(teamTwo, teamOne));
+    }
+
+    inSameDivision(teams) {
+        if (teams.length > 0) {
+            let conference = teams[0].conference;
+            let division = teams[0].division;
+
+            for (let i = 1; i < teams.length; i++) {
+                if (teams[i].conference != conference ||
+                    teams[i].division != division) {
+                        return false;
+                }
+            }
+
+            return true;
+        }
+
+        return false;
+    }
 }
 
 export default RankHandler;
