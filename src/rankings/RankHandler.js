@@ -2,6 +2,7 @@
  * Base class used for ranking teams.
  */
 class RankHandler {
+
     /**
      * Creates a new instance of RankHandler.
      */
@@ -34,6 +35,10 @@ class RankHandler {
      * @param {RankRequest} request 
      */
     handleRequest(request) {}
+
+    rankingComplete(request) {
+        return (request.teams.length === 0 && request.rankedTeams.length === 32);
+    }
 
     beatTeam(teamOne, teamTwo) {
         return (teamOne.wins.indexOf(teamTwo.abbreviation) >= 0);

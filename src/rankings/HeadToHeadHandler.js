@@ -14,18 +14,16 @@ class HeadToHeadHandler extends RankHandler {
                 request.rankedTeams.push(teamOne);
                 request.rankedTeams.push(teamTwo);
                 request.teams = [];
-
-                return;
             } else if (this.sweptTeam(teamTwo, teamOne)) {
                 request.rankedTeams.push(teamTwo);
                 request.rankedTeams.push(teamOne);
                 request.teams = [];
-
-                return;
             }
         }
 
-        this.next.handleRequest(request);
+        if (!this.rankingComplete(request)) {
+            this.next.handleRequest(request);
+        }
     }
 
     canHandle(request) {

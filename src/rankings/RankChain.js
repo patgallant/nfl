@@ -1,3 +1,4 @@
+import RecordHandler        from "./RecordHandler";
 import HeadToHeadHandler    from "./HeadToHeadHandler";
 
 /**
@@ -11,10 +12,13 @@ class RankChain {
      */
     handleRequest(request) {
         // Assemble the rank chain.
+        let recordHandler = new RecordHandler();
         let headToHeadHandler = new HeadToHeadHandler();
 
+        recordHandler.setNext(headToHeadHandler);
+
         // Begin processing the request with the first handler in the chain.
-        headToHeadHandler.handleRequest(request);
+        recordHandler.handleRequest(request);
     }
 }
 
